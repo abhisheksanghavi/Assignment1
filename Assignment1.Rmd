@@ -7,11 +7,7 @@ output: word_document
 
 
 
----
-title: "Exploratory Analysis"
----
-
-# Presidential voting in Georgia        
+#Exploratory Analysis
 
 Read the csv for the voting across counties in Georgia: 
 
@@ -127,9 +123,9 @@ legend("topleft", c("Poor","Rich"), pch=15,
 
 attach(georgiaData)
 
-plot(x=perAA,y=underCountPerCent,main="%vote undercount with percentage of African - American Population",col="black",pch=19)
+plot(x=perAA,y=underCountPerCent,main="%vote undercount vs percentage of African - American",col="black",pch=19)
 
-plot(x=perAA,y=underCountPerCent,main="%vote undercount with percentage of African - American Population",pch=19,col=c("black","red","yellow","green")[equip],xlab="African-American Population",ylab="Undercount % ")
+plot(x=perAA,y=underCountPerCent,main="%vote undercount vs percentage of African - American",pch=19,col=c("black","red","yellow","green")[equip],xlab="African-American Population",ylab="Undercount % ")
 
 legend(x="topright", legend = levels(georgiaData$equip), col=c("red","blue","green","yellow"), pch=19)
 
@@ -148,9 +144,7 @@ detach(georgiaData)
 
 
 
----
-title: "Bootstrapping"
----
+#Bootstrapping
 
 ### Downloading the data and return over each stock 
 
@@ -359,10 +353,7 @@ x=matrix(c(0.2, 0.2, 0.2, 0.2, 0.2,0.2,0.2,0.6,0,0,0,0,0,0.9,0.1),nrow=3,byrow =
 
 
 
----
-title: "Clustering and PCA"
-
----
+#Clustering and PCA
 
 ```{r, echo=FALSE}
 library(ggplot2)
@@ -645,9 +636,7 @@ Thus it can be concluded that although both PCA and clustering can differentiate
 
 
 
----
-title: "Market Segmentation"
----
+#Market Segmentation
 
 ```{r}
 social <- read.csv("../data/social_marketing.csv", row.names=1)
